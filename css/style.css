@@ -122,6 +122,7 @@ body {
   margin-top: 0.40909rem;
   border-radius: 0.22727rem;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   font-size: 0.5rem;
   padding: 1em;
   position: relative; }
@@ -327,6 +328,101 @@ hgroup {
     width: 1.13636rem; }
   #home-nav .icon {
     background: #32486e;
-    text-align: center; }
+    text-align: center;
+    width: 2.27273rem; }
+
+#map {
+  height: 11.36364rem;
+  position: relative; }
+
+.container--after_map {
+  height: 8.63636rem;
+  padding: 0;
+  background: transparent;
+  margin-top: 0.40909rem; }
+
+#map-nav {
+  white-space: nowrap;
+  font-size: 0; }
+
+.map-nav__ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 13.63636rem;
+  vertical-align: top;
+  transition: transform .2s ease; }
+  .map-nav__ul li {
+    display: block;
+    margin-bottom: 0.22727rem; }
+    .map-nav__ul li a {
+      display: table;
+      width: 100%;
+      text-decoration: none;
+      font-size: 0.68182rem;
+      color: #000;
+      overflow: hidden;
+      background: #fff;
+      border-radius: 0.22727rem; }
+      .map-nav__ul li a > div {
+        display: table-cell;
+        padding: 0.31818rem; }
+        .map-nav__ul li a > div.number {
+          background: #32486e;
+          width: 2.72727rem;
+          color: #fff;
+          font-weight: 700; }
+
+#gmap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.13636rem;
+  bottom: 0.13636rem; }
+
+.leaflet-popup-close-button {
+  display: none; }
+
+.leaflet-popup-content-wrapper {
+  border: none;
+  border-radius: 0.18182rem;
+  overflow: hidden;
+  padding: 0; }
+  .leaflet-popup-content-wrapper .leaflet-popup-content {
+    margin: 0;
+    width: 190px !important; }
+
+.map_marker {
+  display: table;
+  width: 100%; }
+  .map_marker > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.31818rem; }
+    .map_marker > div.time {
+      background: #32486e;
+      color: #fff;
+      text-align: center;
+      width: 1.81818rem;
+      border-radius: 0.18182rem 0 0 0.18182rem; }
+      .map_marker > div.time img {
+        width: 0.63636rem; }
+      .map_marker > div.time span {
+        display: block;
+        font-size: 0.40909rem;
+        font-weight: 500; }
+    .map_marker > div.text h3 {
+      font-size: 0.40909rem;
+      text-transform: uppercase; }
+    .map_marker > div.text h4 {
+      font-size: 0.40909rem; }
+
+.leaflet-marker-icon {
+  width: 1.13636rem;
+  height: 1.59091rem; }
+
+.leaflet-control-container {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

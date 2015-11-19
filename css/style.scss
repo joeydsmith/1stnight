@@ -147,6 +147,7 @@ body {
 	margin-top: trem(9px);
 	border-radius: trem(5px);
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	font-size: trem(11px);
 	padding: 1em;
 	position: relative;
@@ -402,5 +403,123 @@ hgroup {
 	.icon {
 		background: $secondary;
 		text-align: center;
+		width: trem(50px);
 	}
+}
+
+#map {
+	height: trem(250px);
+	position: relative;
+}
+
+.container--after_map {
+	height: trem(190px);
+	padding: 0;
+	background: transparent;
+	margin-top: trem(9px);
+}
+
+#map-nav {
+	white-space: nowrap;
+	font-size:0;
+}
+
+.map-nav__ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: trem(300px);
+	vertical-align: top;
+	transition: transform .2s ease;
+	li {
+		display: block;
+		margin-bottom: trem(5px);
+		a {
+			display: table;
+			width: 100%;
+			text-decoration: none;
+			font-size: trem(15px);
+			color: #000;
+			overflow: hidden;
+			background: #fff;
+			border-radius: trem(5px);
+			> div {
+				display: table-cell;
+				padding: trem(7px);
+				&.number {
+					background: $secondary;
+					width: trem(60px);
+					color: #fff;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}
+
+#gmap {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: trem(3px);
+	bottom: trem(3px);
+}
+
+.leaflet-popup-close-button {
+	display: none;
+}
+
+.leaflet-popup-content-wrapper {
+	border: none;
+	border-radius: trem(4px);
+	overflow: hidden;
+	padding: 0;
+	.leaflet-popup-content {
+		margin: 0;
+		width: 190px!important;
+	}
+}
+
+.map_marker {
+	display: table;
+	width: 100%;
+	> div {
+		display: table-cell;
+		vertical-align: middle;
+		padding: trem(7px);
+		&.time {
+			background: $secondary;
+			color: #fff;
+			text-align: center;
+			width: trem(40px); 
+			border-radius: trem(4px) 0 0 trem(4px);
+			img {
+				width: trem(14px);
+			}
+			span {
+				display: block;
+				font-size: trem(9px);
+				font-weight: 500;
+			} 
+		}
+		&.text {
+			h3 {
+				font-size: trem(9px);
+				text-transform: uppercase;
+			}
+			h4 {
+				font-size: trem(9px);
+			}
+		}
+	}
+}
+
+.leaflet-marker-icon {
+	width: trem(25px);
+	height: trem(35px);
+}
+
+.leaflet-control-container {
+	display: none;
 }

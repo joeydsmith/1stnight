@@ -3,9 +3,9 @@
 	<nav id="home-nav">
 		<ul>
 			<li>
-				<a href="page.php">
+				<a href="map.php">
 					<div class="icon"><img src="img/first_night.png"></div>
-					<div class="text">Event Information</div>
+					<div class="text">Map</div>
 				</a>
 			</li>
 			<li>
