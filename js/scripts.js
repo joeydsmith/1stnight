@@ -20,3 +20,9 @@ $('.tabs a').click(function(e){
 
 	e.preventDefault();
 });
+
+
+$('#menu a').click(function(e){
+	$('body').toggleClass('pop-over-active');
+	e.preventDefault();
+})

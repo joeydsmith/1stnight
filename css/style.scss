@@ -94,7 +94,8 @@ body {
 	width: trem(320px);
 	max-width: 100%;
 	margin: 0 auto;
-
+	transition: transform .2s ease;
+	-webkit-transition: -webkit-transform .2s ease;
 	height: 100vh;
 	width: 100%;
 	max-height: 100vh;
@@ -377,7 +378,7 @@ hgroup {
 	padding-top: 0;
 }
 
-#home-nav {
+.home-nav {
 	max-width: 90%;
 	margin: 0 auto;
 	margin-top: trem(12px);
@@ -539,4 +540,39 @@ hgroup {
 
 .leaflet-control-container {
 	display: none;
+}
+
+#pop-over-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: trem(300px);
+	@media(max-width: 320px) {
+		width: trem(250px);
+	}
+	background: $secondary;
+	transform: translateX(-100%);
+	-webkit-transform: translateX(-100%);
+	transition: all .2s ease;
+	.home-nav {
+		.icon {
+			background: $primary;
+		}
+	}
+}
+
+.pop-over-active {
+	#pop-over-nav {
+		transform: translateX(0);
+		-webkit-transform: translateX(0);
+	}
+	#app {
+		transform: translateX(trem(300px));
+		-webkit-transform: translateX(trem(300px));
+		@media(max-width: 320px) {
+			transform: translateX(trem(250px));
+			-webkit-transform: translateX(trem(250px));
+		}
+	}
 }

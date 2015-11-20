@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-	<meta name="viewport" content="width=320, initial-scale=1, user-scalable=no">
+	<meta name="viewport" content="width=min-device-width, initial-scale=1, user-scalable=no">
 	<title></title>
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>

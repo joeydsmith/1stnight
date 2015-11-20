@@ -78,6 +78,8 @@ body {
   width: 14.54545rem;
   max-width: 100%;
   margin: 0 auto;
+  transition: transform .2s ease;
+  -webkit-transition: -webkit-transform .2s ease;
   height: 100vh;
   width: 100%;
   max-height: 100vh; }
@@ -308,20 +310,20 @@ hgroup {
   background-position: center 5.25rem;
   padding-top: 0; }
 
-#home-nav {
+.home-nav {
   max-width: 90%;
   margin: 0 auto;
   margin-top: 0.54545rem;
   margin-bottom: 5.45455rem; }
-  #home-nav ul {
+  .home-nav ul {
     list-style: none;
     margin: 0 auto;
     padding: 0; }
-    #home-nav ul li {
+    .home-nav ul li {
       margin: 0.54545rem 0; }
-      #home-nav ul li:first-child {
+      .home-nav ul li:first-child {
         margin-top: 0; }
-  #home-nav a {
+  .home-nav a {
     display: table;
     width: 100%;
     background: #fff url("../img/chevron.png");
@@ -333,14 +335,14 @@ hgroup {
     text-decoration: none;
     font-size: 0.68182rem;
     color: #000; }
-    #home-nav a > div {
+    .home-nav a > div {
       display: table-cell;
       vertical-align: middle;
       padding: 0.40909rem; }
-  #home-nav img {
+  .home-nav img {
     vertical-align: middle;
     height: 1.13636rem; }
-  #home-nav .icon {
+  .home-nav .icon {
     background: #32486e;
     text-align: center;
     width: 2.27273rem; }
@@ -439,5 +441,32 @@ hgroup {
 
 .leaflet-control-container {
   display: none; }
+
+#pop-over-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 13.63636rem;
+  background: #32486e;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transition: all .2s ease; }
+  @media (max-width: 320px) {
+    #pop-over-nav {
+      width: 11.36364rem; } }
+  #pop-over-nav .home-nav .icon {
+    background: #6f7ca1; }
+
+.pop-over-active #pop-over-nav {
+  transform: translateX(0);
+  -webkit-transform: translateX(0); }
+.pop-over-active #app {
+  transform: translateX(13.63636rem);
+  -webkit-transform: translateX(13.63636rem); }
+  @media (max-width: 320px) {
+    .pop-over-active #app {
+      transform: translateX(11.36364rem);
+      -webkit-transform: translateX(11.36364rem); } }
 
 /*# sourceMappingURL=style.css.map */

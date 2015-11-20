@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 <div id="home" class="container">
-	<nav id="home-nav">
+	<nav class="home-nav">
 		<ul>
 			<li>
 				<a href="map.php">
