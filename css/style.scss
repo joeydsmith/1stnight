@@ -548,6 +548,7 @@ hgroup {
 	left: 0;
 	bottom: 0;
 	width: trem(300px);
+	border-right: 3px solid rgba(0,0,0, .2);
 	@media(max-width: 320px) {
 		width: trem(250px);
 	}

@@ -448,6 +448,7 @@ hgroup {
   left: 0;
   bottom: 0;
   width: 13.63636rem;
+  border-right: 3px solid rgba(0, 0, 0, 0.2);
   background: #32486e;
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
