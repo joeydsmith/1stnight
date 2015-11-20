@@ -114,10 +114,15 @@ body {
   background-size: 100% auto;
   margin: 0 auto; }
 
-.container {
-  display: block;
+hgroup {
   max-width: 100%;
   width: 13.63636rem;
+  margin: 0 auto; }
+
+.container {
+  display: block;
+  max-width: 98%;
+  width: 16.36364rem;
   height: 17.54545rem;
   background: #fff;
   background-size: 100% auto;
@@ -298,7 +303,7 @@ hgroup {
   padding-top: 0; }
 
 #home-nav {
-  max-width: 208px;
+  max-width: 90%;
   margin: 0 auto;
   margin-top: 0.54545rem;
   margin-bottom: 5.45455rem; }
@@ -328,7 +333,7 @@ hgroup {
       padding: 0.40909rem; }
   #home-nav img {
     vertical-align: middle;
-    width: 1.13636rem; }
+    height: 1.13636rem; }
   #home-nav .icon {
     background: #32486e;
     text-align: center;
@@ -346,14 +351,15 @@ hgroup {
 
 #map-nav {
   white-space: nowrap;
-  font-size: 0; }
+  font-size: 0;
+  overflow-x: hidden; }
 
 .map-nav__ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 13.63636rem;
+  width: 100%;
   vertical-align: top;
   transition: transform .2s ease; }
   .map-nav__ul li {
@@ -394,7 +400,7 @@ hgroup {
   padding: 0; }
   .leaflet-popup-content-wrapper .leaflet-popup-content {
     margin: 0;
-    width: 190px !important; }
+    width: 220px !important; }
 
 .map_marker {
   display: table;

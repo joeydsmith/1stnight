@@ -139,11 +139,15 @@ body {
 	background-size: 100% auto;
 	margin: 0 auto;
 }
-
+ hgroup {
+ 	max-width: 100%;
+ 	width: trem(300px);
+ 	margin: 0 auto;
+ }
 .container {
 	display: block;
-	max-width: 100%;
-	width: trem(300px);
+	max-width: 98%;
+	width: trem(360px);
 	height: trem(386px);
 	background: #fff;
 	background-size: 100% auto;
@@ -367,7 +371,7 @@ hgroup {
 }
 
 #home-nav {
-	max-width: 208px;
+	max-width: 90%;
 	margin: 0 auto;
 	margin-top: trem(12px);
 	margin-bottom: trem(120px);
@@ -402,12 +406,13 @@ hgroup {
 	}
 	img {
 		vertical-align: middle;
-		width: trem(25px);
+		height: trem(25px);
 	}
 	.icon {
 		background: $secondary;
 		text-align: center;
 		width: trem(50px);
+
 	}
 }
 
@@ -426,6 +431,7 @@ hgroup {
 #map-nav {
 	white-space: nowrap;
 	font-size:0;
+	overflow-x: hidden;
 }
 
 .map-nav__ul {
@@ -433,7 +439,7 @@ hgroup {
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	width: trem(300px);
+	width: 100%;
 	vertical-align: top;
 	transition: transform .2s ease;
 	li {
@@ -481,7 +487,7 @@ hgroup {
 	padding: 0;
 	.leaflet-popup-content {
 		margin: 0;
-		width: 190px!important;
+		width: 220px!important;
 	}
 }
 

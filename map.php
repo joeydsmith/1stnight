@@ -4,9 +4,9 @@
 </div>
 <nav class="tabs" data-target=".map-nav__ul">
 	<ul>
-		<li><a class="active" href="#">Item 1</a></li>
-		<li><a href="#">Item 2</a></li>
-		<li><a href="#">Item 3</a></li>
+		<li><a class="active" href="#">Event</a></li>
+		<li><a href="#">Performers</a></li>
+		<li><a href="#">Venues</a></li>
 	</ul>
 </nav>
 <div class="container container--after_map">

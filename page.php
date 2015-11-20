@@ -1,9 +1,9 @@
 <?php include 'header.php'; ?>
 <nav class="tabs">
 	<ul>
-		<li><a class="active" href="#">Item 1</a></li>
-		<li><a href="#">Item 2</a></li>
-		<li><a href="#">Item 3</a></li>
+		<li><a class="active" href="#">Event</a></li>
+		<li><a href="#">Performers</a></li>
+		<li><a href="#">Venues</a></li>
 	</ul>
 </nav>
 <hgroup>
